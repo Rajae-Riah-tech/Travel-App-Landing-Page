@@ -188,6 +188,58 @@ header .navbar a:hover {
 .features .box-container .box:hover >*{
     color: #fff;
 }
+.about .row{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 2rem 5%;
+}
+.about .row .image{
+    flex: 1 1 40rem;
+}
+.about .row .image img{
+    width: 250px;
+    height: auto;
+    border-radius: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.about .row .content{
+    flex: 1 ;
+    max-width: 500px;
+}
+.about .row .content h3{
+    color: var(--black);
+    font-size: 3.5rem;
+}
+.about .row .content p{
+    color: #666;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+.about .row .content .buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about .row .content .buttons a:hover{
+    opacity: .7;
+}
+
+.about .row .content .buttons a:last-child{
+    margin-left: 2rem;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -252,6 +304,15 @@ header .navbar a:hover {
     .home .content p {
         font-size: 1.5rem;
     }
+    .about .row .content{
+        text-align: center;
+    }
+       .about .row .content .buttons a{
+        width: 100%;
+    }
+    .about .row .content .buttons a:last-child{
+        margin: 1rem 0;
+    }
 }
 
 @media (max-width:400px) {
@@ -261,4 +322,5 @@ header .navbar a:hover {
     .heading{
         font-size: 4rem ;
     }
+ 
 }
